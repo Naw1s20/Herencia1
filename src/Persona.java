@@ -9,6 +9,23 @@ public class Persona {
 
     }
 
+    public Persona(String nombre, String apellido, String numeroFiscal, String direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.numeroFiscal = numeroFiscal;
+        this.direccion = direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", numeroFiscal='" + numeroFiscal + '\'' +
+                ", direccion='" + direccion + '\'' +
+                '}';
+    }
+
     public String getNombre() {
         return nombre;
     }
